@@ -9,13 +9,21 @@ G-TomOS is a minimalist educational operating system written in C. It boots thro
 ```
 
 G-TomOS/
-├── bin/                 # Compiled binary files (gtomos.elf)
+├── bin/
+│   └── gtomos.elf
+├── iso/
+│   └── boot/
+│       ├── gtomos.elf
+│       └── grub/
+│           └── grub.cfg
 ├── src/
-│   ├── linker.ld        # Linker script for the kernel
+│   ├── linker.ld
 │   └── kernel/
 │       ├── kernel.c
 │       └── io.h
-└── Makefile             # Kernel build script
+├── gtomos.iso
+├── Makefile
+└── LICENSE
 
 ```
 
@@ -51,3 +59,4 @@ qemu-system-i386 -cdrom gtomos.iso
 * `kernel.c` — main kernel and VGA driver
 * `linker.ld` — kernel memory layout
 * `Makefile` — build automation script
+* `gtomos.iso` — iso file
