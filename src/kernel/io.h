@@ -6,12 +6,14 @@
 #pragma once
 #include <stdint.h>
 
-/**
- * @brief Transmits a byte of data to a specified I/O port.
- * Uses inline assembly to execute the 'outb' instruction.
- * @param port The target hardware port address.
- * @param value The 8-bit data value to transmit.
- */
+/* Write a byte to an I/O port */
 static inline void outb(uint16_t port, uint8_t value) {
     __asm__ volatile ("outb %0, %1" : : "a"(value), "Nd"(port));
+}
+
+/* Read a byte from an I/O port */
+static inline uint8_t inb(uint16_t port) {
+    uint8_t ret;
+    __asm__ volatile ("inb %1, %0" : "=a"(ret) : "Nd"(port));
+    return ret;
 }
