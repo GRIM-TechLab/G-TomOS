@@ -4,6 +4,10 @@ G-TomOS is a minimalist educational operating system written in C. It boots thro
 
 ---
 
+![G-TomOS running in QEMU](screenshots/g-tomos-qemu.png)
+
+---
+
 ## Build and Run
 
 1. Compile the kernel:  
