@@ -28,13 +28,11 @@ qemu-system-i386 -cdrom gtomos.iso
 
 ---
 
-## File Description
-
-* `io.h` — low-level input/output port functions
-* `kernel.c` — main kernel and VGA driver
-* `linker.ld` — kernel memory layout
-* `Makefile` — build automation script
-* `gtomos.iso` — iso file
+Text promt: Yes
+Keyboard driver: Yes
+Mouse driver: No
+File System driver: No
+Network: No
 
 ---
 
