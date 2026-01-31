@@ -4,31 +4,6 @@ G-TomOS is a minimalist educational operating system written in C. It boots thro
 
 ---
 
-## Project Structure
-
-```
-
-G-TomOS/
-├── bin/
-│   └── gtomos.elf
-├── iso/
-│   └── boot/
-│       ├── gtomos.elf
-│       └── grub/
-│           └── grub.cfg
-├── src/
-│   ├── linker.ld
-│   └── kernel/
-│       ├── kernel.c
-│       └── io.h
-├── gtomos.iso
-├── Makefile
-└── LICENSE
-
-```
-
----
-
 ## Build and Run
 
 1. Compile the kernel:  
